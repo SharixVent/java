@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.List;
 
 public class AdminPanel extends JFrame {
@@ -48,7 +51,22 @@ public class AdminPanel extends JFrame {
                 String photoPath = "";
                 if (returnValue == JFileChooser.APPROVE_OPTION) {
                     File selectedFile = fileChooser.getSelectedFile();
-                    photoPath = selectedFile.getAbsolutePath(); // Pobierz ścieżkę do zdjęcia
+                    try {
+                        // Create the Photos directory if it doesn't exist
+                        File photosDir = new File("Photos");
+                        if (!photosDir.exists()) {
+                            photosDir.mkdir();
+                        }
+
+                        // Copy the selected file to the Photos directory
+                        File destinationFile = new File(photosDir, selectedFile.getName());
+                        Files.copy(selectedFile.toPath(), destinationFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                        photoPath = "Photos/" + selectedFile.getName(); // Update the photo path
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                        JOptionPane.showMessageDialog(AdminPanel.this, "Error copying photo file.");
+                        return;
+                    }
                 }
 
                 // Utwórz i dodaj nowe zwierzę
