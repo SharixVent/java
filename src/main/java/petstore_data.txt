@@ -1,0 +1,5 @@
+CASHIER:admin,admin123
+PET:Mruczyslaw,Kot,Bialy,5,Ladny bialy perski kot,C:\Users\Dawid\Documents\JAVA\src\main\java\Java_Projekt\Photos\mialczek.jpg
+PET:Pan Mruczek,Kot,Czarny,5,Czarny jak wegiel,C:\Users\Dawid\Documents\JAVA\src\main\java\Java_Projekt\Photos\pan_mialczek.jpg
+PET:Sasha,Kot,Szary,2,Malutki slodki kotek,C:\Users\Dawid\Documents\JAVA\src\main\java\Java_Projekt\Photos\sasha.jpg
+PET:Burek,Pies,Brazowy,4,Brazowy bulldog,C:\Users\Dawid\Documents\JAVA\src\main\java\Java_Projekt\Photos\burek.jpg
