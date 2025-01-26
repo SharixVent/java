@@ -38,3 +38,29 @@ Skompiluj projekt:
 ```bash
 javac Java_Projekt/*.java
 ```
+Uruchom aplikację:
+```bash
+java Java_Projekt.PetStoreApp
+```
+
+# Struktura projektu
+```
+pet-store-management/
+├── src
+    ├── main
+    │   ├── java
+    │   │   └── Java_Projekt
+    │   │       ├── AdminPanel.java
+    │   │       ├── Cashier.java
+    │   │       ├── Database.java
+    │   │       ├── GuestPanel.java
+    │   │       ├── LoginPanel.java
+    │   │       └── Pet.java
+    │   │   │── petstore_data.txt
+    │── test/main
+    └── pom.xml
+```
+
+# Autor
+Dawid Krawczyk
+
