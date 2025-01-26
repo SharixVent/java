@@ -57,7 +57,7 @@ pet-store-management/
     │   │       ├── LoginPanel.java
     │   │       └── Pet.java
     │   │   │── petstore_data.txt
-    │── test/main
+    │── test/java
     └── pom.xml
 ```
 
