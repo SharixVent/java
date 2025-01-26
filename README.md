@@ -50,6 +50,7 @@ pet-store-management/
     ├── main
     │   ├── java
     │   │   └── Java_Projekt
+    |   |       ├── Photos
     │   │       ├── AdminPanel.java
     │   │       ├── Cashier.java
     │   │       ├── Database.java
