@@ -56,8 +56,9 @@ pet-store-management/
     │   │       ├── Database.java
     │   │       ├── GuestPanel.java
     │   │       ├── LoginPanel.java
-    │   │       └── Pet.java
-    │   │   │── petstore_data.txt
+    │   │       |── Pet.java
+    │   │       └── PetStoreApp.java
+    │   │   └── petstore_data.txt
     │── test/java
     └── pom.xml
 ```
